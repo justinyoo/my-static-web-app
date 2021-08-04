@@ -20,9 +20,10 @@ jobs:
           submodules: true
 
       ### 이 액션 추가해 보세요
-      - shell: bash
+      - name: Update npm to 7.x or later
+        shell: bash
         run: |
-          npm install -g npm
+          sudo npm install -g npm
       ### 이 액션 추가해 보세요
 
       - name: Build And Deploy
