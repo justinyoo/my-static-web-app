@@ -18,6 +18,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+
+      ### 이 액션 추가해 보세요
+      - shell: bash
+        run: |
+          npm install -g npm
+      ### 이 액션 추가해 보세요
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
